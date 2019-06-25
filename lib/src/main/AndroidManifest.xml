@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="github.hotstu.shadowprovider">
+    <application>
+        <provider
+                android:name=".ShadowProvider"
+                android:authorities="${applicationId}.shadow-init"
+                android:exported="false"
+                android:initOrder="100"
+                android:multiprocess="true"/>
+    </application>
+</manifest>
